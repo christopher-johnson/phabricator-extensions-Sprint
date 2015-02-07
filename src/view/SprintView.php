@@ -2,6 +2,11 @@
 
 
 abstract class SprintView extends AphrontView {
+
+  /**
+   * @param boolean $has_window
+   * @param PhabricatorUser $user
+   */
   public function renderReportFilters(array $tokens, $has_window, $user) {
 
     $form = id(new AphrontFormView())
